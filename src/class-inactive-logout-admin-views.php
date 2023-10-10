@@ -107,7 +107,7 @@ class Inactive_Logout_Admin_Views {
 			$options = get_option( '__ina_inactive_logout_options' );
 		}
 
-		$time                    = ( isset( $options['__ina_logout_time'] ) ) ? $options['__ina_logout_time'] : '';
+		$time                    = ( isset( $options['__ina_logout_time'] ) ) ? $options['__ina_logout_time'] : 0;
 		$countdown               = ( isset( $options['__ina_disable_countdown'] ) ) ? $options['__ina_disable_countdown'] : 10;
 		$ina_full_overlay        = ( isset( $options['__ina_full_overlay'] ) ) ? $options['__ina_full_overlay'] : '';
 		$ina_popup_overlay_color = ( isset( $options['__ina_popup_overlay_color'] ) ) ? $options['__ina_popup_overlay_color'] : '';
